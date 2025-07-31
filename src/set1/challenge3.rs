@@ -108,6 +108,7 @@ fn scoring_func(plaintext_bytes: &[u8]) -> f64 {
     for &byte in plaintext_bytes {
         // Non-ASCII printable range incurs a negative score as punishment
         if byte < 0x20 || byte > 0x7e {
+            // Control bytes are excused
             if byte == b'\n' || byte == b'\t' || byte == b'\r' {
                 score += 0.5;
             } else {
