@@ -29,11 +29,11 @@ cryptopals/
 
 ## Progress Board
 
-`DONE` | Cryptopals: Set1, Challenge1
-`DONE` | Cryptopals: Set1, Challenge2
-`DONE` | Cryptopals: Set1, Challenge3
-TODO | Cryptopals: Set1, Challenge4
-`DONE` | Cryptopals: Set1, Challenge5
-TODO | Cryptopals: Set1, Challenge6
-TODO | Cryptopals: Set1, Challenge7
-TODO | Cryptopals: Set1, Challenge8
+- `DONE` | Cryptopals: Set1, Challenge1
+- `DONE` | Cryptopals: Set1, Challenge2
+- `DONE` | Cryptopals: Set1, Challenge3
+- TODO | Cryptopals: Set1, Challenge4
+- `DONE` | Cryptopals: Set1, Challenge5
+- TODO | Cryptopals: Set1, Challenge6
+- TODO | Cryptopals: Set1, Challenge7
+- TODO | Cryptopals: Set1, Challenge8
