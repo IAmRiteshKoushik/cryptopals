@@ -1,9 +1,29 @@
 use std::{
     fs::{File, metadata, read_to_string},
     io::{self, BufRead, BufReader, Read},
+    path::Path,
 };
 
 // -- ACTUALLY USEFUL FUNCTIONS
+pub fn read_lines_from_file(path: &Path) -> io::Result<Vec<String>> {
+    let file = File::open(path)?;
+    let reader = BufReader::new(file);
+    let mut lines = Vec::new();
+
+    for line_result in reader.lines() {
+        // Longer version
+        // match line_result {
+        //     Ok(line) => lines.push(line),
+        //     Err(e) => return Err(e),
+        // }
+
+        // -- Smart alternative
+        let line = line_result?;
+        lines.push(line);
+    }
+
+    Ok(lines)
+}
 
 // -- EXPERIMENTAL FUNCTIONS
 // These are a bunch of functions that I wrote for checking out how things
